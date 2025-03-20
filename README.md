@@ -63,6 +63,6 @@ PAM comprises of Entities and Roles.
 * It is free to use and modify, as specified in the [GNU AGPLv3 License](/LICENSE).
 * It is provided as-is, without any warranty. Please ensure it works as intended before using it in a real humanitarian program.
 * It is meant to be used as a starting point for organizations to build their own data management system. It is recommended to customize it to the specific needs of your organization.
-* If you have any questions, please contact [510](https://www.510.global/contact/). We cannot guarantee support, but we will do our best to help you.
+* If you have any questions, please [contact us](https://www.510.global/contact/). We cannot guarantee support, but we will do our best to help you.
 
 
