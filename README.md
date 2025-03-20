@@ -49,9 +49,9 @@ PAM comprises of Entities and Roles.
 3. Make the entities visible in the `Navbar`:
     * Go to `Administration` > `User Interface`.
     * Under `Navbar` > `Tab List`, add the entities `Persons Affected`, `Households`, `Programs`, and `Tasks`.
-4. Import every file in the [import](/import) folder:
+4. For every file in the [import](/import) folder, import it in EspoCRM:
     * Go to `Administration` > `Import`.
-    * Under `What to Improt?` > `Entity Type`, select the file name; e.g. if the file is `Roles.csv`, select `Roles`.
+    * Under `What to Import?` > `Entity Type`, select the file name; e.g. if the file is `Roles.csv`, select `Roles`.
     * Click `Next`.
     * Click `Run Import`.
 
