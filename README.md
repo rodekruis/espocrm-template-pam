@@ -13,15 +13,15 @@ EspoCRM is an open-source data management system. It is highly customizable dire
 
 ## Description
 
-PAM consists of Entities and Roles. 
-* Entities are the data structures that hold the information of people and programs.
+PAM consists of _Entities_ and _Roles_. 
+* Entities are data structures that hold information (about people, programs, etc.).
 * Roles are sets of permissions that define what each user can do in the system.
 
-#### Entities:
-* **Person Affected (PA)**: a person affected by a disaster, e.g. a beneficiary of a program.
-* **Household (HH)**: a group of people living together, e.g. a family.
-* **Program**: a project or activity, e.g. a cash distribution.
-* **Task**: an action to be taken linked to a specific PA, e.g. a follow-up phone call.
+#### Entities and their relationships:
+* **Person Affected (PA)**: a person affected by a disaster, e.g. a beneficiary of a program. Linked to HHs, programs, and tasks.
+* **Household (HH)**: a group of people living together, e.g. a family. Linked to one or more PAs.
+* **Program**: a project or activity, e.g. a cash distribution. Linked to one or more PAs.
+* **Task**: an action to be taken, e.g. a follow-up phone call, that can be assigned to a user, e.g. a volunteer. Linked to one or more PAs.
 
 #### Roles:
 * **Volunteer**: registers PAs and HHs. Sees PAs and HHs of their team (e.g. a branch). Can be assigned tasks.
