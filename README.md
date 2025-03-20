@@ -35,9 +35,10 @@ PAM comprises of Entities and Roles.
 > [!IMPORTANT]  
 > Make sure to back up your EspoCRM instance before installing this extension.
 
-1. Download the .zip file with the extension: [extension.zip](/extension.zip).
-2. Install it in EspoCRM
-    * Log in as an administrator.
+1. If not done already, [install EspoCRM](https://docs.espocrm.com/administration/installation/).
+2. Download the .zip file with the extension: [extension.zip](https://github.com/rodekruis/espocrm-template-pam/raw/refs/heads/main/extension.zip).
+2. Install the extension
+    * Log in EspoCRM as an administrator.
     * Go to `Administration` > `Extensions`.
     * Select the .zip file with the extension.
     * Click `Install`.
