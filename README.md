@@ -1,4 +1,4 @@
-# espocrm-template-pam
+# People Affected Management (PAM)
 
 ## Introduction
 
@@ -60,7 +60,7 @@ PAM consists of _Entities_ and _Roles_.
 
 ## Terms of Use
 * This extension is developed by [the Netherlands Red Cross' 510](https://www.510.global/) and is not officially supported by EspoCRM.
-* It is free to use and modify, as specified in the [GNU AGPLv3 License](/LICENSE).
+* It is free to use and modify, as specified in the [GNU AGPLv3 License](/LICENSE.md).
 * It is provided as-is, without any warranty. Please ensure it works as intended before using it in a real humanitarian program.
 * It is meant to be used as a starting point for organizations to build their own data management system. It is recommended to customize it to the specific needs of your organization.
 * If you have any questions, please [contact us](https://www.510.global/contact/). We cannot guarantee support, but we will do our best to help you.
