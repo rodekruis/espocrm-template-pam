@@ -13,7 +13,7 @@ EspoCRM is an open-source data management system. It is highly customizable dire
 
 ## Description
 
-PAM comprises of Entities and Roles. 
+PAM consists of Entities and Roles. 
 * Entities are the data structures that hold the information of people and programs.
 * Roles are sets of permissions that define what each user can do in the system.
 
