@@ -1,0 +1,53 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "sidePanels": {
+        "detail": [
+            {
+                "name": "activities",
+                "label": "Activities",
+                "view": "crm:views/record/panels/activities",
+                "aclScope": "Activities"
+            },
+            {
+                "name": "history",
+                "label": "History",
+                "view": "crm:views/record/panels/history",
+                "aclScope": "Activities"
+            },
+            {
+                "name": "tasks",
+                "label": "Tasks",
+                "view": "crm:views/record/panels/tasks",
+                "aclScope": "Task"
+            }
+        ]
+    },
+    "iconClass": "fas fa-project-diagram",
+    "relationshipPanels": {
+        "cTasks": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "parent": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "cPersonAffecteds": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "emails": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "tasks": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    },
+    "kanbanViewMode": false,
+    "color": "#bbffbb"
+}

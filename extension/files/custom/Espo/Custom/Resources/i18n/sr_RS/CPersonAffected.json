@@ -1,0 +1,13 @@
+{
+  "fields": {
+    "address": "Adresa"
+  },
+  "links": {
+    "meetings": "Ročišta",
+    "calls": "Pozivi",
+    "tasks": "Zadaci"
+  },
+  "labels": {
+    "Create CPersonAffected": "Napravi Person Affected"
+  }
+}

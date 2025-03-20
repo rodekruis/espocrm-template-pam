@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "parent": {
+            "entityList": [
+                "Account",
+                "Lead",
+                "Contact",
+                "Opportunity",
+                "Case",
+                "CProgram",
+                "CTask",
+                "CPersonAffected",
+                "CCUser"
+            ]
+        }
+    }
+}

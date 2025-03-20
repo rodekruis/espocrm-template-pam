@@ -1,0 +1,37 @@
+{
+    "fields": {
+        "programID": "Program ID",
+        "programName": "Program Name",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "donor": "Donor",
+        "inclusionCriteria": "Inclusion Criteria",
+        "programStatus": "Program Status",
+        "cPeopleAffected": "People Affected",
+        "cTasks": "Tasks",
+        "cPersonAffecteds": "Person Affecteds"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "cPeopleAffected": "People Affected",
+        "cTasks": "Tasks",
+        "cPersonAffecteds": "Person Affecteds"
+    },
+    "labels": {
+        "Create CProgram": "Create Program"
+    },
+    "options": {
+        "programStatus": {
+            "Planned": "Planned",
+            "Active": "Active",
+            "Completed": "Completed",
+            "Inactive": "Inactive",
+            "inactive": "Inactive",
+            "planned": "Planned",
+            "active": "Active",
+            "completed": "Completed"
+        }
+    }
+}

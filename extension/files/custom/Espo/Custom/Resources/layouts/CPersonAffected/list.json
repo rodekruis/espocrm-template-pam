@@ -1,0 +1,42 @@
+[
+    {
+        "name": "internalID",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "name",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "cHousehold"
+    },
+    {
+        "name": "country"
+    },
+    {
+        "name": "dateofbirth"
+    },
+    {
+        "name": "age"
+    },
+    {
+        "name": "emailAddress"
+    },
+    {
+        "name": "nationality",
+        "notSortable": true
+    },
+    {
+        "name": "languagesSpoken",
+        "notSortable": true
+    },
+    {
+        "name": "preferredLanguage"
+    },
+    {
+        "name": "vulnerabilityType",
+        "notSortable": true
+    }
+]

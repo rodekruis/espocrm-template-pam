@@ -1,0 +1,29 @@
+{
+    "scopeNames": {
+        "CHousehold": "Household",
+        "CProgram": "Program",
+        "CTask": "Task",
+        "CPersonAffected": "Person Affected",
+        "CCUser": "Volunteer"
+    },
+    "scopeNamesPlural": {
+        "CHousehold": "Households",
+        "CProgram": "Programs",
+        "CTask": "Tasks",
+        "CPersonAffected": "Persons Affected",
+        "CCUser": "Volunteers"
+    },
+    "labels": {
+        "Access denied": "Access Denied",
+        "change": "Change",
+        "Copied to clipboard": "Copied to Clipboard",
+        "create": "Create",
+        "Current version": "Current Version",
+        "Mark all read": "Mark All read",
+        "New notifications": "New Notifications",
+        "Not found": "Not Found",
+        "Not valid": "Not Valid",
+        "Wrong username/password": "Wrong Username/Password",
+        "by": "By"
+    }
+}

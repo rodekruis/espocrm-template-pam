@@ -1,0 +1,31 @@
+{
+    "fields": {
+        "taskID": "Task ID",
+        "taskName": "Task Name",
+        "dueDate": "Due Date",
+        "taskStatus": "Task Status",
+        "cProgram": "Program"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "cProgram": "Program"
+    },
+    "labels": {
+        "Create CTask": "Create Task"
+    },
+    "options": {
+        "taskStatus": {
+            "": "Not Started",
+            "In Progress": "In Progress",
+            "Waiting (external)": "Waiting (external)",
+            "Not Started": "Not Started",
+            "Completed": "Completed",
+            "notStarted": "Not Started",
+            "waiting": "Waiting",
+            "inProgress": "In Progress",
+            "completed": "Completed"
+        }
+    }
+}

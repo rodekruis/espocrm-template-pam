@@ -1,0 +1,34 @@
+[
+    {
+        "name": "internalID",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "name",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "cHeadOfHouseHold"
+    },
+    {
+        "name": "cPersonAffected",
+        "notSortable": true
+    },
+    {
+        "name": "memberCount"
+    },
+    {
+        "name": "calculatedMale"
+    },
+    {
+        "name": "calculatedFemale"
+    },
+    {
+        "name": "calculatedPregnant"
+    },
+    {
+        "name": "calculatedChildren"
+    }
+]

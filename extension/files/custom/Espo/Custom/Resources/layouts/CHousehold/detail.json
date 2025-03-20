@@ -1,0 +1,45 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "memberCount"
+                }
+            ],
+            [
+                {
+                    "name": "cHeadOfHouseHold"
+                },
+                {
+                    "name": "cPersonAffected"
+                }
+            ],
+            [
+                {
+                    "name": "calculatedMale"
+                },
+                {
+                    "name": "calculatedFemale"
+                }
+            ],
+            [
+                {
+                    "name": "calculatedPregnant"
+                },
+                {
+                    "name": "calculatedChildren"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "customLabel": "Overview"
+    }
+]

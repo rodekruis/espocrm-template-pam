@@ -1,0 +1,14 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "cHeadOfHouseHold"
+    },
+    {
+        "name": "cPersonAffected",
+        "notSortable": true
+    }
+]

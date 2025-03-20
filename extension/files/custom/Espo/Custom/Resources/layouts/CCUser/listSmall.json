@@ -1,0 +1,20 @@
+[
+    {
+        "name": "userName",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "name"
+    },
+    {
+        "name": "emailAddress"
+    },
+    {
+        "name": "teams",
+        "notSortable": true
+    },
+    {
+        "name": "isActive"
+    }
+]

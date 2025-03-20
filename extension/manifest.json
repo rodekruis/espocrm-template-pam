@@ -1,0 +1,13 @@
+{
+  "name": "Espo CRM PAM Extension",
+  "version": "1.0.0",
+  "acceptableVersions": [
+     ">=7.5.0"
+  ],
+  "php": [
+     ">=8.1"
+  ],
+  "releaseDate": "2024-10-01",
+  "author": "",
+  "description": "Creates PAM entities along with their relationships and layouts"
+}

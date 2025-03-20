@@ -1,0 +1,758 @@
+{
+    "fields": {
+        "name": {
+            "type": "personName",
+            "isPersonalData": true
+        },
+        "salutationName": {
+            "type": "enum",
+            "options": [
+                "",
+                "mr.",
+                "ms.",
+                "mrs.",
+                "dr."
+            ],
+            "style": {
+                "": null,
+                "mr.": null,
+                "ms.": null,
+                "mrs.": null,
+                "dr.": null
+            }
+        },
+        "firstName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "lastName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "required": true,
+            "audited": true,
+            "options": []
+        },
+        "description": {
+            "type": "text"
+        },
+        "emailAddress": {
+            "type": "email",
+            "isPersonalData": true,
+            "audited": true
+        },
+        "phoneNumber": {
+            "notStorable": true,
+            "type": "phone",
+            "typeList": [
+                "Mobile",
+                "Office",
+                "Home",
+                "Fax",
+                "Other"
+            ],
+            "defaultType": "Mobile",
+            "isPersonalData": true,
+            "required": true,
+            "audited": true
+        },
+        "address": {
+            "type": "address",
+            "isPersonalData": true,
+            "audited": true
+        },
+        "addressStreet": {
+            "type": "text",
+            "maxLength": 255,
+            "dbType": "varchar",
+            "audited": true
+        },
+        "addressCity": {
+            "type": "varchar",
+            "audited": true
+        },
+        "addressState": {
+            "type": "varchar",
+            "audited": true
+        },
+        "addressCountry": {
+            "type": "varchar",
+            "audited": true
+        },
+        "addressPostalCode": {
+            "type": "varchar",
+            "audited": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user",
+            "audited": true
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams",
+            "audited": true
+        },
+        "age": {
+            "type": "int",
+            "audited": true,
+            "isCustom": false,
+            "readOnly": true
+        },
+        "country": {
+            "type": "enum",
+            "audited": true,
+            "style": {
+                "": null,
+                "sk": null,
+                "pl": null,
+                "hu": null,
+                "md": null,
+                "ro": null,
+                "ua": null
+            },
+            "maxLength": 100,
+            "isCustom": false,
+            "options": [
+                "",
+                "sk",
+                "pl",
+                "hu",
+                "md",
+                "ro",
+                "ua"
+            ],
+            "default": null
+        },
+        "dateofbirth": {
+            "notNull": false,
+            "type": "date",
+            "required": true,
+            "useNumericFormat": true,
+            "audited": true,
+            "isCustom": false,
+            "isPersonalData": true
+        },
+        "disabilityType": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "default": [],
+            "options": [
+                "physical",
+                "mental",
+                "speech",
+                "hearing",
+                "visual"
+            ],
+            "style": {
+                "physical": null,
+                "mental": null,
+                "speech": null,
+                "hearing": null,
+                "visual": null
+            },
+            "displayAsList": true,
+            "pattern": null,
+            "audited": true,
+            "isCustom": false,
+            "isPersonalData": false
+        },
+        "gender": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "",
+                "male",
+                "female",
+                "other"
+            ],
+            "default": null,
+            "displayAsLabel": true,
+            "audited": true,
+            "style": {
+                "": null,
+                "male": null,
+                "female": null,
+                "other": null
+            },
+            "maxLength": 100,
+            "isCustom": false
+        },
+        "idNumber": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 100,
+            "audited": true,
+            "isPersonalData": true,
+            "options": [],
+            "isCustom": false
+        },
+        "idType": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "",
+                "passport",
+                "idCard",
+                "temporaryID",
+                "idDocumentNA"
+            ],
+            "displayAsLabel": true,
+            "audited": true,
+            "style": {
+                "": null,
+                "passport": null,
+                "idCard": null,
+                "temporaryID": null,
+                "idDocumentNA": null
+            },
+            "isPersonalData": true,
+            "maxLength": 100,
+            "isCustom": false
+        },
+        "internalID": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "nextNumber": 16,
+            "padLength": 6,
+            "prefix": "PA",
+            "isCustom": false,
+            "audited": true
+        },
+        "isThisMemberAHeadOfHousehold": {
+            "notNull": true,
+            "type": "bool",
+            "audited": true,
+            "isCustom": false
+        },
+        "isThisMemberAPregnantWoman": {
+            "notNull": true,
+            "type": "bool",
+            "audited": true,
+            "isCustom": false
+        },
+        "languagesSpoken": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "required": true,
+            "options": [
+                "en",
+                "fr",
+                "ar",
+                "zh",
+                "ru",
+                "es"
+            ],
+            "default": [],
+            "isSorted": true,
+            "displayAsList": true,
+            "audited": true,
+            "style": {
+                "en": null,
+                "fr": null,
+                "ar": null,
+                "zh": null,
+                "ru": null,
+                "es": null
+            },
+            "isCustom": false
+        },
+        "nationality": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "required": true,
+            "default": [],
+            "displayAsList": true,
+            "audited": true,
+            "isPersonalData": true,
+            "style": {
+                "netherlands": null
+            },
+            "isCustom": false,
+            "options": [
+                "netherlands"
+            ]
+        },
+        "otherName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "audited": true,
+            "isPersonalData": true,
+            "isCustom": false
+        },
+        "preferredLanguage": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "en",
+                "fr",
+                "ar",
+                "zh",
+                "ru",
+                "es",
+                ""
+            ],
+            "audited": true,
+            "style": {
+                "en": null,
+                "fr": null,
+                "ar": null,
+                "zh": null,
+                "ru": null,
+                "es": null,
+                "": null
+            },
+            "tooltip": true,
+            "maxLength": 100,
+            "isCustom": false
+        },
+        "recordNumber": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "prefix": "SeqID",
+            "nextNumber": 40,
+            "padLength": 8,
+            "copyToClipboard": true,
+            "isCustom": false
+        },
+        "vulnerabilityType": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "options": [
+                "",
+                "femaleSingleHeadedHH",
+                "childHeadedHH",
+                "elderlyHeadedHH",
+                "fourOrMoreChildren",
+                "dependencyRatio",
+                "pregnantWoman",
+                "chronicIllness",
+                "idp",
+                "marginalized",
+                "otherCriteria"
+            ],
+            "default": [],
+            "isSorted": true,
+            "displayAsList": true,
+            "style": {
+                "": null,
+                "femaleSingleHeadedHH": null,
+                "childHeadedHH": null,
+                "elderlyHeadedHH": null,
+                "fourOrMoreChildren": null,
+                "dependencyRatio": null,
+                "pregnantWoman": null,
+                "chronicIllness": null,
+                "idp": null,
+                "marginalized": null,
+                "otherCriteria": null
+            },
+            "isPersonalData": true,
+            "isCustom": false,
+            "audited": true
+        },
+        "cHousehold": {
+            "type": "link",
+            "audited": true
+        },
+        "cHouseholdHO": {
+            "type": "linkOne",
+            "audited": true
+        },
+        "province": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "bacsKiskun",
+                "baranya",
+                "bekes",
+                "borsodAbaujZemplen",
+                "budapest",
+                "csongrad",
+                "fejer",
+                "gyorMosonSopron",
+                "hajduBihar",
+                "heves",
+                "jaszNagykunSzolnok",
+                "komaromEsztergom",
+                "nograd",
+                "pestMegye",
+                "somogy",
+                "szabolcsSzatmarBereg",
+                "tolna",
+                "vas",
+                "veszprem",
+                "zala",
+                "aneniiNoi",
+                "balti",
+                "basarabeasca",
+                "bender",
+                "briceni",
+                "cahul",
+                "calarasi",
+                "cantemir",
+                "causeni",
+                "chisinau",
+                "cimislia",
+                "criuleni",
+                "donduseni",
+                "drochia",
+                "dubasari",
+                "edinet",
+                "falesti",
+                "floresti",
+                "glodeni",
+                "hincesti",
+                "ialoveni",
+                "leova",
+                "nisporeni",
+                "ocnita",
+                "orhei",
+                "rezina",
+                "riscani",
+                "singerei",
+                "soldanesti",
+                "soroca",
+                "stefanVoda",
+                "straseni",
+                "taraclia",
+                "telenesti",
+                "transnistria",
+                "ungheni",
+                "unitateTeritorialaAutonomaGagauzia",
+                "dolnoslaskie",
+                "kujawskoPomorskie",
+                "lubelskie",
+                "lubuskie",
+                "odzkie",
+                "maopolskie",
+                "mazowieckie",
+                "opolskie",
+                "podkarpackie",
+                "podlaskie",
+                "pomorskie",
+                "slaskie",
+                "swietokrzyskie",
+                "warminskoMazurskie",
+                "wielkopolskie",
+                "zachodniopomorskie",
+                "nordEst",
+                "sudEst",
+                "sud",
+                "sudVest",
+                "vest",
+                "nordVest",
+                "centru",
+                "bucurestiIlfov",
+                "bratislavskyKraj",
+                "trnavskyKraj",
+                "trencianskyKraj",
+                "nitrianskyKraj",
+                "zilinskyKraj",
+                "banskobystrickyKraj",
+                "presovskyKraj",
+                "kosickyKraj",
+                "Autonomous Republic of Crimea",
+                "Vinnytska",
+                "Volynska",
+                "Dnipropetrovska",
+                "Donetska",
+                "Zhytomyrska",
+                "Zakarpatska",
+                "Zaporizka",
+                "Ivano-Frankivska",
+                "Kyivska",
+                "Kirovohradska",
+                "Luhanska",
+                "Lvivska",
+                "Mykolaivska",
+                "Odeska",
+                "Poltavska",
+                "Rivnenska",
+                "Sumska",
+                "Ternopilska",
+                "Kharkivska",
+                "Khersonska",
+                "Khmelnytska",
+                "Cherkaska",
+                "Chernivetska",
+                "Chernihivska",
+                "Kyiv",
+                "Sevastopol",
+                ""
+            ],
+            "maxLength": 100,
+            "isCustom": false,
+            "style": {
+                "bacsKiskun": null,
+                "baranya": null,
+                "bekes": null,
+                "borsodAbaujZemplen": null,
+                "budapest": null,
+                "csongrad": null,
+                "fejer": null,
+                "gyorMosonSopron": null,
+                "hajduBihar": null,
+                "heves": null,
+                "jaszNagykunSzolnok": null,
+                "komaromEsztergom": null,
+                "nograd": null,
+                "pestMegye": null,
+                "somogy": null,
+                "szabolcsSzatmarBereg": null,
+                "tolna": null,
+                "vas": null,
+                "veszprem": null,
+                "zala": null,
+                "aneniiNoi": null,
+                "balti": null,
+                "basarabeasca": null,
+                "bender": null,
+                "briceni": null,
+                "cahul": null,
+                "calarasi": null,
+                "cantemir": null,
+                "causeni": null,
+                "chisinau": null,
+                "cimislia": null,
+                "criuleni": null,
+                "donduseni": null,
+                "drochia": null,
+                "dubasari": null,
+                "edinet": null,
+                "falesti": null,
+                "floresti": null,
+                "glodeni": null,
+                "hincesti": null,
+                "ialoveni": null,
+                "leova": null,
+                "nisporeni": null,
+                "ocnita": null,
+                "orhei": null,
+                "rezina": null,
+                "riscani": null,
+                "singerei": null,
+                "soldanesti": null,
+                "soroca": null,
+                "stefanVoda": null,
+                "straseni": null,
+                "taraclia": null,
+                "telenesti": null,
+                "transnistria": null,
+                "ungheni": null,
+                "unitateTeritorialaAutonomaGagauzia": null,
+                "dolnoslaskie": null,
+                "kujawskoPomorskie": null,
+                "lubelskie": null,
+                "lubuskie": null,
+                "odzkie": null,
+                "maopolskie": null,
+                "mazowieckie": null,
+                "opolskie": null,
+                "podkarpackie": null,
+                "podlaskie": null,
+                "pomorskie": null,
+                "slaskie": null,
+                "swietokrzyskie": null,
+                "warminskoMazurskie": null,
+                "wielkopolskie": null,
+                "zachodniopomorskie": null,
+                "nordEst": null,
+                "sudEst": null,
+                "sud": null,
+                "sudVest": null,
+                "vest": null,
+                "nordVest": null,
+                "centru": null,
+                "bucurestiIlfov": null,
+                "bratislavskyKraj": null,
+                "trnavskyKraj": null,
+                "trencianskyKraj": null,
+                "nitrianskyKraj": null,
+                "zilinskyKraj": null,
+                "banskobystrickyKraj": null,
+                "presovskyKraj": null,
+                "kosickyKraj": null,
+                "Autonomous Republic of Crimea": null,
+                "Vinnytska": null,
+                "Volynska": null,
+                "Dnipropetrovska": null,
+                "Donetska": null,
+                "Zhytomyrska": null,
+                "Zakarpatska": null,
+                "Zaporizka": null,
+                "Ivano-Frankivska": null,
+                "Kyivska": null,
+                "Kirovohradska": null,
+                "Luhanska": null,
+                "Lvivska": null,
+                "Mykolaivska": null,
+                "Odeska": null,
+                "Poltavska": null,
+                "Rivnenska": null,
+                "Sumska": null,
+                "Ternopilska": null,
+                "Kharkivska": null,
+                "Khersonska": null,
+                "Khmelnytska": null,
+                "Cherkaska": null,
+                "Chernivetska": null,
+                "Chernihivska": null,
+                "Kyiv": null,
+                "Sevastopol": null,
+                "": null
+            },
+            "default": null
+        },
+        "isThisMemberAHeadOfHouseholdTemp": {
+            "type": "enum",
+            "options": [
+                "null",
+                "true",
+                "false"
+            ],
+            "style": {
+                "null": null,
+                "true": null,
+                "false": null
+            },
+            "default": "null",
+            "maxLength": 100,
+            "isCustom": false
+        },
+        "cPrograms": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": false,
+            "isCustom": false,
+            "audited": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "meetings": {
+            "type": "hasMany",
+            "entity": "Meeting",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "calls": {
+            "type": "hasMany",
+            "entity": "Call",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "tasks": {
+            "type": "hasChildren",
+            "entity": "Task",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "audited": true
+        },
+        "cHousehold": {
+            "type": "belongsTo",
+            "foreign": "cPersonAffected",
+            "entity": "CHousehold",
+            "audited": true,
+            "isCustom": false
+        },
+        "cHouseholdHO": {
+            "type": "hasOne",
+            "foreign": "cHeadOfHouseHold",
+            "entity": "CHousehold",
+            "isCustom": false,
+            "audited": true
+        },
+        "cPrograms": {
+            "type": "hasMany",
+            "relationName": "cCProgramCPersonAffected",
+            "foreign": "cPersonAffecteds",
+            "entity": "CProgram",
+            "audited": true,
+            "isCustom": false
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc"
+    },
+    "indexes": {
+        "firstName": {
+            "columns": [
+                "firstName",
+                "deleted"
+            ]
+        },
+        "name": {
+            "columns": [
+                "firstName",
+                "lastName"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        },
+        "createdAt": {
+            "columns": [
+                "createdAt"
+            ]
+        },
+        "createdAtId": {
+            "unique": true,
+            "columns": [
+                "createdAt",
+                "id"
+            ]
+        }
+    }
+}

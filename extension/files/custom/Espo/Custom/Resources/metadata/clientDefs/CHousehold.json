@@ -1,0 +1,36 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "color": "#ffc257",
+    "iconClass": "fas fa-house-user",
+    "relationshipPanels": {
+        "cPersonAffected": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "cHeadOfHouseHold": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    },
+    "kanbanViewMode": false,
+    "dynamicLogic": {
+        "fields": {
+            "cPersonAffected": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "isEmpty",
+                            "attribute": "cHeadOfHouseHoldId",
+                            "data": {
+                                "field": "cHeadOfHouseHold"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
