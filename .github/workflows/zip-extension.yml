@@ -1,6 +1,6 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: build and deploy to dev
+name: zip and commit extension
 
 on:
   push:
@@ -9,10 +9,17 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  zip-and-commit:
     runs-on: 'ubuntu-latest'
 
     steps:
-      - uses: montudor/action-zip@v1
-        with:
-          args: zip -qq -r extension.zip . -i extension
+    - name: Create zip file
+      uses: montudor/action-zip@v1
+      with:
+        args: zip -qq -r extension.zip . -i extension
+
+    - name: Commit zip file
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: 'extension.zip'
+        default_author: github_actions
