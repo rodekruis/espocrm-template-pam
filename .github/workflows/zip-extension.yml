@@ -15,4 +15,4 @@ jobs:
     steps:
       - uses: montudor/action-zip@v1
         with:
-          args: zip -qq -r extension.zip extension
+          args: zip -qq -r extension.zip . -i extension
