@@ -1,0 +1,18 @@
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: build and deploy to dev
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: 'ubuntu-latest'
+
+    steps:
+      - uses: montudor/action-zip@v1
+        with:
+          args: zip -qq -r extension.zip extension
