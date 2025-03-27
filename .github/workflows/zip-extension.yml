@@ -15,14 +15,18 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+      with:
+        path: './repo/'
 
     - name: Create zip file
       uses: montudor/action-zip@v1
       with:
-        args: zip -qq -r extension.zip . -i extension
+        args: zip -qq -r extension.zip extension
+        working-directory: './repo/'
 
     - name: Commit zip file
       uses: EndBug/add-and-commit@v9
       with:
-        add: 'extension.zip'
+        add: 'extension.zip --force'
+        cwd: './repo/'
         default_author: github_actions
