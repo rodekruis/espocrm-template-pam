@@ -21,13 +21,13 @@ jobs:
     - name: Install zip
       uses: montudor/action-zip@v1
 
-    - name: Create zip file
-      run: zip -qq -r ../extension.zip *
-      working-directory: './repo/extension/'
-
-    - name: Commit zip file
-      uses: EndBug/add-and-commit@v9
-      with:
-        add: 'extension.zip --force'
-        cwd: './repo/'
-        default_author: github_actions
+#    - name: Create zip file
+#      run: zip -qq -r ../extension.zip *
+#      working-directory: './repo/extension/'
+#
+#    - name: Commit zip file
+#      uses: EndBug/add-and-commit@v9
+#      with:
+#        add: 'extension.zip --force'
+#        cwd: './repo/'
+#        default_author: github_actions
