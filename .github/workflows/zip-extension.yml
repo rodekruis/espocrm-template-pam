@@ -22,7 +22,7 @@ jobs:
       uses: montudor/action-zip@v1
 
     - name: Create zip file
-      run: zip -qq -r extension.zip extension/*
+      run: zip -j -qq -r extension.zip extension/*
       working-directory: './repo/'
 
     - name: Commit zip file
