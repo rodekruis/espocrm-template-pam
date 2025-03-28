@@ -116,7 +116,7 @@
         "age": {
             "type": "int",
             "audited": true,
-            "isCustom": false,
+            "isCustom": true,
             "readOnly": true
         },
         "country": {
@@ -132,7 +132,7 @@
                 "ua": null
             },
             "maxLength": 100,
-            "isCustom": false,
+            "isCustom": true,
             "options": [
                 "",
                 "sk",
@@ -150,7 +150,7 @@
             "required": true,
             "useNumericFormat": true,
             "audited": true,
-            "isCustom": false,
+            "isCustom": true,
             "isPersonalData": true
         },
         "disabilityType": {
@@ -174,7 +174,7 @@
             "displayAsList": true,
             "pattern": null,
             "audited": true,
-            "isCustom": false,
+            "isCustom": true,
             "isPersonalData": false
         },
         "gender": {
@@ -196,7 +196,7 @@
                 "other": null
             },
             "maxLength": 100,
-            "isCustom": false
+            "isCustom": true
         },
         "idNumber": {
             "type": "varchar",
@@ -205,7 +205,7 @@
             "audited": true,
             "isPersonalData": true,
             "options": [],
-            "isCustom": false
+            "isCustom": true
         },
         "idType": {
             "type": "enum",
@@ -228,7 +228,7 @@
             },
             "isPersonalData": true,
             "maxLength": 100,
-            "isCustom": false
+            "isCustom": true
         },
         "internalID": {
             "type": "number",
@@ -238,20 +238,20 @@
             "nextNumber": 16,
             "padLength": 6,
             "prefix": "PA",
-            "isCustom": false,
+            "isCustom": true,
             "audited": true
         },
         "isThisMemberAHeadOfHousehold": {
             "notNull": true,
             "type": "bool",
             "audited": true,
-            "isCustom": false
+            "isCustom": true
         },
         "isThisMemberAPregnantWoman": {
             "notNull": true,
             "type": "bool",
             "audited": true,
-            "isCustom": false
+            "isCustom": true
         },
         "languagesSpoken": {
             "type": "multiEnum",
@@ -277,7 +277,7 @@
                 "ru": null,
                 "es": null
             },
-            "isCustom": false
+            "isCustom": true
         },
         "nationality": {
             "type": "multiEnum",
@@ -290,7 +290,7 @@
             "style": {
                 "netherlands": null
             },
-            "isCustom": false,
+            "isCustom": true,
             "options": [
                 "netherlands"
             ]
@@ -301,7 +301,7 @@
             "options": [],
             "audited": true,
             "isPersonalData": true,
-            "isCustom": false
+            "isCustom": true
         },
         "preferredLanguage": {
             "type": "enum",
@@ -327,7 +327,7 @@
             },
             "tooltip": true,
             "maxLength": 100,
-            "isCustom": false
+            "isCustom": true
         },
         "recordNumber": {
             "type": "number",
@@ -338,7 +338,7 @@
             "nextNumber": 40,
             "padLength": 8,
             "copyToClipboard": true,
-            "isCustom": false
+            "isCustom": true
         },
         "vulnerabilityType": {
             "type": "multiEnum",
@@ -373,7 +373,7 @@
                 "otherCriteria": null
             },
             "isPersonalData": true,
-            "isCustom": false,
+            "isCustom": true,
             "audited": true
         },
         "cHousehold": {
@@ -389,242 +389,12 @@
             "audited": true,
             "options": [
                 "bacsKiskun",
-                "baranya",
-                "bekes",
-                "borsodAbaujZemplen",
-                "budapest",
-                "csongrad",
-                "fejer",
-                "gyorMosonSopron",
-                "hajduBihar",
-                "heves",
-                "jaszNagykunSzolnok",
-                "komaromEsztergom",
-                "nograd",
-                "pestMegye",
-                "somogy",
-                "szabolcsSzatmarBereg",
-                "tolna",
-                "vas",
-                "veszprem",
-                "zala",
-                "aneniiNoi",
-                "balti",
-                "basarabeasca",
-                "bender",
-                "briceni",
-                "cahul",
-                "calarasi",
-                "cantemir",
-                "causeni",
-                "chisinau",
-                "cimislia",
-                "criuleni",
-                "donduseni",
-                "drochia",
-                "dubasari",
-                "edinet",
-                "falesti",
-                "floresti",
-                "glodeni",
-                "hincesti",
-                "ialoveni",
-                "leova",
-                "nisporeni",
-                "ocnita",
-                "orhei",
-                "rezina",
-                "riscani",
-                "singerei",
-                "soldanesti",
-                "soroca",
-                "stefanVoda",
-                "straseni",
-                "taraclia",
-                "telenesti",
-                "transnistria",
-                "ungheni",
-                "unitateTeritorialaAutonomaGagauzia",
-                "dolnoslaskie",
-                "kujawskoPomorskie",
-                "lubelskie",
-                "lubuskie",
-                "odzkie",
-                "maopolskie",
-                "mazowieckie",
-                "opolskie",
-                "podkarpackie",
-                "podlaskie",
-                "pomorskie",
-                "slaskie",
-                "swietokrzyskie",
-                "warminskoMazurskie",
-                "wielkopolskie",
-                "zachodniopomorskie",
-                "nordEst",
-                "sudEst",
-                "sud",
-                "sudVest",
-                "vest",
-                "nordVest",
-                "centru",
-                "bucurestiIlfov",
-                "bratislavskyKraj",
-                "trnavskyKraj",
-                "trencianskyKraj",
-                "nitrianskyKraj",
-                "zilinskyKraj",
-                "banskobystrickyKraj",
-                "presovskyKraj",
-                "kosickyKraj",
-                "Autonomous Republic of Crimea",
-                "Vinnytska",
-                "Volynska",
-                "Dnipropetrovska",
-                "Donetska",
-                "Zhytomyrska",
-                "Zakarpatska",
-                "Zaporizka",
-                "Ivano-Frankivska",
-                "Kyivska",
-                "Kirovohradska",
-                "Luhanska",
-                "Lvivska",
-                "Mykolaivska",
-                "Odeska",
-                "Poltavska",
-                "Rivnenska",
-                "Sumska",
-                "Ternopilska",
-                "Kharkivska",
-                "Khersonska",
-                "Khmelnytska",
-                "Cherkaska",
-                "Chernivetska",
-                "Chernihivska",
-                "Kyiv",
-                "Sevastopol",
                 ""
             ],
             "maxLength": 100,
-            "isCustom": false,
+            "isCustom": true,
             "style": {
                 "bacsKiskun": null,
-                "baranya": null,
-                "bekes": null,
-                "borsodAbaujZemplen": null,
-                "budapest": null,
-                "csongrad": null,
-                "fejer": null,
-                "gyorMosonSopron": null,
-                "hajduBihar": null,
-                "heves": null,
-                "jaszNagykunSzolnok": null,
-                "komaromEsztergom": null,
-                "nograd": null,
-                "pestMegye": null,
-                "somogy": null,
-                "szabolcsSzatmarBereg": null,
-                "tolna": null,
-                "vas": null,
-                "veszprem": null,
-                "zala": null,
-                "aneniiNoi": null,
-                "balti": null,
-                "basarabeasca": null,
-                "bender": null,
-                "briceni": null,
-                "cahul": null,
-                "calarasi": null,
-                "cantemir": null,
-                "causeni": null,
-                "chisinau": null,
-                "cimislia": null,
-                "criuleni": null,
-                "donduseni": null,
-                "drochia": null,
-                "dubasari": null,
-                "edinet": null,
-                "falesti": null,
-                "floresti": null,
-                "glodeni": null,
-                "hincesti": null,
-                "ialoveni": null,
-                "leova": null,
-                "nisporeni": null,
-                "ocnita": null,
-                "orhei": null,
-                "rezina": null,
-                "riscani": null,
-                "singerei": null,
-                "soldanesti": null,
-                "soroca": null,
-                "stefanVoda": null,
-                "straseni": null,
-                "taraclia": null,
-                "telenesti": null,
-                "transnistria": null,
-                "ungheni": null,
-                "unitateTeritorialaAutonomaGagauzia": null,
-                "dolnoslaskie": null,
-                "kujawskoPomorskie": null,
-                "lubelskie": null,
-                "lubuskie": null,
-                "odzkie": null,
-                "maopolskie": null,
-                "mazowieckie": null,
-                "opolskie": null,
-                "podkarpackie": null,
-                "podlaskie": null,
-                "pomorskie": null,
-                "slaskie": null,
-                "swietokrzyskie": null,
-                "warminskoMazurskie": null,
-                "wielkopolskie": null,
-                "zachodniopomorskie": null,
-                "nordEst": null,
-                "sudEst": null,
-                "sud": null,
-                "sudVest": null,
-                "vest": null,
-                "nordVest": null,
-                "centru": null,
-                "bucurestiIlfov": null,
-                "bratislavskyKraj": null,
-                "trnavskyKraj": null,
-                "trencianskyKraj": null,
-                "nitrianskyKraj": null,
-                "zilinskyKraj": null,
-                "banskobystrickyKraj": null,
-                "presovskyKraj": null,
-                "kosickyKraj": null,
-                "Autonomous Republic of Crimea": null,
-                "Vinnytska": null,
-                "Volynska": null,
-                "Dnipropetrovska": null,
-                "Donetska": null,
-                "Zhytomyrska": null,
-                "Zakarpatska": null,
-                "Zaporizka": null,
-                "Ivano-Frankivska": null,
-                "Kyivska": null,
-                "Kirovohradska": null,
-                "Luhanska": null,
-                "Lvivska": null,
-                "Mykolaivska": null,
-                "Odeska": null,
-                "Poltavska": null,
-                "Rivnenska": null,
-                "Sumska": null,
-                "Ternopilska": null,
-                "Kharkivska": null,
-                "Khersonska": null,
-                "Khmelnytska": null,
-                "Cherkaska": null,
-                "Chernivetska": null,
-                "Chernihivska": null,
-                "Kyiv": null,
-                "Sevastopol": null,
                 "": null
             },
             "default": null
@@ -643,7 +413,7 @@
             },
             "default": "null",
             "maxLength": 100,
-            "isCustom": false
+            "isCustom": true
         },
         "cPrograms": {
             "type": "linkMultiple",
@@ -654,7 +424,7 @@
             "importDisabled": false,
             "exportDisabled": false,
             "customizationDisabled": false,
-            "isCustom": false,
+            "isCustom": true,
             "audited": true
         }
     },
@@ -701,13 +471,13 @@
             "foreign": "cPersonAffected",
             "entity": "CHousehold",
             "audited": true,
-            "isCustom": false
+            "isCustom": true
         },
         "cHouseholdHO": {
             "type": "hasOne",
             "foreign": "cHeadOfHouseHold",
             "entity": "CHousehold",
-            "isCustom": false,
+            "isCustom": true,
             "audited": true
         },
         "cPrograms": {
@@ -716,7 +486,7 @@
             "foreign": "cPersonAffecteds",
             "entity": "CProgram",
             "audited": true,
-            "isCustom": false
+            "isCustom": true
         }
     },
     "collection": {

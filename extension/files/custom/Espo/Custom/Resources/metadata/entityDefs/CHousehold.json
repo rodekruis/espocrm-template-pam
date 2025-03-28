@@ -46,20 +46,20 @@
             "audited": true,
             "min": 1,
             "max": 100,
-            "isCustom": false,
+            "isCustom": true,
             "readOnly": false
         },
         "hHId": {
             "type": "varchar",
             "maxLength": 100,
             "options": [],
-            "isCustom": false,
-	    "audited": true
+            "isCustom": true,
+	        "audited": true
         },
         "calculatedMale": {
             "type": "int",
             "audited": true,
-            "isCustom": false
+            "isCustom": true
         },
         "cPersonAffected": {
             "type": "linkMultiple",
@@ -70,28 +70,28 @@
             "importDisabled": false,
             "exportDisabled": false,
             "customizationDisabled": false,
-            "isCustom": false,
-	    "audited": true
+            "isCustom": true,
+	        "audited": true
         },
         "calculatedFemale": {
             "type": "int",
             "audited": true,
-            "isCustom": false
+            "isCustom": true
         },
         "calculatedPregnant": {
             "type": "int",
             "audited": true,
-            "isCustom": false
+            "isCustom": true
         },
         "calculatedChildren": {
             "type": "int",
             "audited": true,
-            "isCustom": false
+            "isCustom": true
         },
         "cHeadOfHouseHold": {
             "type": "link",
-	    "audited": true,
-	    "isCustom": false
+	        "audited": true,
+	        "isCustom": true
         },
         "internalID": {
             "type": "number",
@@ -101,32 +101,32 @@
             "nextNumber": 18,
             "padLength": 6,
             "prefix": "HH",
-            "isCustom": false,
-	    "audited": true
+            "isCustom": true,
+	        "audited": true
         },
         "calculatedTempMale": {
             "type": "int",
-            "isCustom": false,
+            "isCustom": true,
             "default": null
         },
         "calculatedTempFemale": {
             "type": "int",
-            "isCustom": false,
+            "isCustom": true,
             "default": null
         },
         "calculatedTempChildren": {
             "type": "int",
-            "isCustom": false
+            "isCustom": true
         },
         "calculatedTempPregnant": {
             "type": "int",
-            "isCustom": false
+            "isCustom": true
         },
         "cTempHeadOfHouseHold": {
             "type": "varchar",
             "maxLength": 100,
             "options": [],
-            "isCustom": false
+            "isCustom": true
         }
     },
     "links": {
@@ -153,13 +153,13 @@
             "foreign": "cHousehold",
             "entity": "CPersonAffected",
             "audited": true,
-            "isCustom": false
+            "isCustom": true
         },
         "cHeadOfHouseHold": {
             "type": "belongsTo",
             "foreign": "cHouseholdHO",
             "entity": "CPersonAffected",
-            "isCustom": false
+            "isCustom": true
         }
     },
     "collection": {

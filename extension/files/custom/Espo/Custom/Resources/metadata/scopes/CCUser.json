@@ -24,7 +24,7 @@
     "type": "Person",
     "module": "Custom",
     "object": true,
-    "isCustom": false,
+    "isCustom": true,
     "statusField": null,
     "kanbanStatusIgnoreList": null
 }
