@@ -1,23 +1,19 @@
-# People Affected Management (PAM)
+# Feedback Management 
 
 ## Introduction
 
-**People Affected Management (PAM)** is a data management solution based on EspoCRM for humanitarian organizations to manage the data of the people they serve.
+**Feedback Management** is a data management solution based on EspoCRM for humanitarian organizations to manage feedback data of community members.
 
-#### Why PAM?
-Management of people's personal information is a critical aspect of humanitarian work. It is essential to have a system that is **secure**, **easy to use**, **fast to set up**, and **customizable** to the needs of your organization. PAM is designed to meet these requirements. PAM offers:
+#### Why Feedback Management Template?
+Management of feedback is a critical aspect of humanitarian work. It is essential to have a system that is **secure**, **easy to use**, **fast to set up**, and **customizable** to the needs of your organization. This Feedback Management Template is designed to meet these requirements by offering:
 * A generic data model defining basic data tables and their relationships​
 * A simple layout for ease of use​
 * Standard user roles to control access down to individual records and fields​
 * Workflows that automate operational processes​
-<<<<<<< Updated upstream
-* Integrations with other tools, such as Kobo
-=======
 * Can be connected with KoboToolbox Feedback Forms for offline data collection capabilities
-* Possibility to 
+* Possibility to link with PowerBI dashboards
 * Integrations with other tools via REST API
 * Can work with other Templates for humanitarian use cases, such as the [People Affected Management (PAM) Template](https://github.com/rodekruis/espocrm-template-pam).
->>>>>>> Stashed changes
 
 #### Why EspoCRM?
 [EspoCRM](https://www.espocrm.com/) is an open-source data management system. It is highly customizable, directly from the user interface. It is free to use, lightweight, and has a large, supportive user community. For more information, visit the [EspoCRM Documentation](https://docs.espocrm.com/) and [510's EspoCRM knowledge base](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki).
@@ -25,24 +21,28 @@ Management of people's personal information is a critical aspect of humanitarian
 
 ## Description
 
-PAM consists of _Entities_ and _Roles_. 
-* Entities are data structures that hold information (about people, programs, etc.).
+The Feedback Management Template consists of _Entities_, _Roles_ and _Teams_. 
+* Entities are data structures that hold information (about feedback, people, programs, etc.).
 * Roles are sets of permissions that define what each user can do in the system.
+* Teams are groups of users 
 
 #### Entities and their relationships:
-* **Person Affected (PA)**: a person affected by a disaster, e.g. a beneficiary of a program. Linked to HHs, programs, and tasks.
-* **Household (HH)**: a group of people living together, e.g. a family. Linked to one or more PAs.
-* **Program**: a project or activity, e.g. a cash distribution. Linked to one or more PAs.
-* **Task**: an action to be taken, e.g. a follow-up phone call, that can be assigned to a user, e.g. a volunteer. Linked to one or more PAs.
+* **Feedback Form**: can  
+* **Report**: 
+* **Dashboard**: 
+* **Flowchart**: 
 
 #### Roles:
-* **Volunteer**: registers PAs and HHs. Sees PAs and HHs of their team (e.g. a branch). Can be assigned tasks.
-* **Volunteer Manager**: registers PAs and HHs. Sees and edit all PAs and HHs of their team (e.g. a branch). Can create and assign tasks to volunteers in their team.
-* **Program Officer**: registers, sees, and edits all PAs and HHs. Can create and assign tasks.
-* **Program Manager**: registers, sees, and edits all PAs and HHs. Can create and assign tasks. Can create and edit programs.
-* **Movement Partner or Higher Management**: Sees all data except personally identifiable information (PII).
+* **CEA Focal Point/Officer**: can create, read, edit and delete all Feedback Forms; can create, read, edit, delete Reports
+* **Branch Manager**: can create, read and edit all Feedback Forms related to the specific Branch; can read Reports related to the specific Branch
+* **Director/Manager/Officer of Programs/Services**: ???
+* **PMER**: can create, read, edit and delete Reports; can create, read, edit and delete Dashboards (collection of Reports)
+* **Admin/IT/IM**: can create, read, edit and delete (almost) everything in the system
+* **KoboConnect API**: automatic system role to be able to send Feedback Forms from KoboToolbox to EspoCRM; this will not be assigned to a user 
 
-### KoboToolbox Feedback Form (optional):
+#### Teams (Default):
+* **Sensitive Feedback**: are the only one that can see Feedback Forms that have been marked as sensitive. They can manage sensitive Feedback Forms and mark them as non-sensitive so that others can see these too. 
+* **Branch XXX**: can see only the forms related to that branch location.
 
 ## Installation
 
