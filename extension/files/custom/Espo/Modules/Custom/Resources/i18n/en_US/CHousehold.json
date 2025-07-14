@@ -1,0 +1,23 @@
+{
+    "fields": {
+        "memberCount": "No. of Members",
+        "calculatedMale": "No. of Males",
+        "cPersonAffected": "Household Members",
+        "calculatedFemale": "No. of Females",
+        "calculatedPregnant": "No. of Pregnant Women",
+        "calculatedChildren": "No. of Children",
+        "cHeadOfHouseHold": "Head of Household",
+        "internalID": "Household ID",
+        "calculateMembers": "Calculate HH Characteristics from HH Members"
+    },
+    "links": {
+        "cPersonAffected": "Household Members",
+        "cHeadOfHouseHold": "Head of Household"
+    },
+    "labels": {
+        "Create CHousehold": "Create Household"
+    },
+    "tooltips": {
+        "calculateMembers": "If selected, the number of male/female/children will be calculated automatically from the individual HH members; otherwise, it will be manually defined."
+    }
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "internalID",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "cHeadOfHouseHold"
+    },
+    {
+        "name": "cPersonAffected",
+        "notSortable": true
+    },
+    {
+        "name": "memberCount"
+    }
+]

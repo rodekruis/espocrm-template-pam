@@ -1,0 +1,11 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "stream": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
+        "index": 0
+    }
+}

@@ -1,0 +1,41 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "taskID"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "taskName"
+                },
+                {
+                    "name": "taskStatus"
+                }
+            ],
+            [
+                {
+                    "name": "dueDate"
+                },
+                {
+                    "name": "cProgram"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "customLabel": "Overview"
+    }
+]

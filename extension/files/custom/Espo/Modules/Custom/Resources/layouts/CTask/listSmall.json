@@ -1,0 +1,17 @@
+[
+    {
+        "name": "taskID",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "taskName",
+        "align": "left"
+    },
+    {
+        "name": "taskStatus"
+    },
+    {
+        "name": "dueDate"
+    }
+]

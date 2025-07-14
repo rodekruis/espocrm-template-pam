@@ -1,0 +1,17 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "cTasks": {
+        "index": 0
+    },
+    "cPersonAffecteds": {
+        "index": 1
+    },
+    "stream": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
+        "index": 2
+    }
+}

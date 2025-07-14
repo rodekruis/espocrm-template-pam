@@ -1,0 +1,22 @@
+[
+    {
+        "name": "programID",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "programName"
+    },
+    {
+        "name": "programStatus"
+    },
+    {
+        "name": "startDate"
+    },
+    {
+        "name": "endDate"
+    },
+    {
+        "name": "donor"
+    }
+]

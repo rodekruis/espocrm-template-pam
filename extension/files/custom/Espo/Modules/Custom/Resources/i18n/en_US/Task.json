@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "cTaskID": "Task ID"
+    },
+    "options": {
+        "status": {
+            "toDO": "To Do",
+            "inProgress": "In Progress",
+            "done": "Done",
+            "deferred": "Deferred"
+        }
+    }
+}

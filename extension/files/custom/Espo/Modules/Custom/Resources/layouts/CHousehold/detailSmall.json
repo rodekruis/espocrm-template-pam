@@ -1,0 +1,63 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "internalID"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "cHeadOfHouseHold"
+                },
+                {
+                    "name": "cPersonAffected"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "customLabel": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "calculateMembers"
+                },
+                {
+                    "name": "memberCount"
+                }
+            ],
+            [
+                {
+                    "name": "calculatedMale"
+                },
+                {
+                    "name": "calculatedFemale"
+                }
+            ],
+            [
+                {
+                    "name": "calculatedChildren"
+                },
+                {
+                    "name": "calculatedPregnant"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "noteStyle": "info",
+        "customLabel": "Characteristics"
+    }
+]
