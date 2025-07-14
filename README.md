@@ -5,12 +5,12 @@
 **People Affected Management (PAM)** is a data management solution based on EspoCRM for humanitarian organizations to manage the data of the people they serve.
 
 #### Why PAM?
-Management of people's personal information is a critical aspect of humanitarian work. It is essential to have a system that is **secure**, **easy to use**, **fast to set up**, and **customizable** to the needs of your organization. PAM is designed to meet these requirements. PAM offers:
-* A generic data model defining basic data tables and their relationships​
-* A simple layout for ease of use​
-* Standard user roles to control access down to individual records and fields​
-* Workflows that automate operational processes​
-* Integrations with other tools, such as Kobo
+Management of people's personal information is a critical aspect of humanitarian work. It is essential to have a system that is **secure**, **easy to use**, **fast to set up**, and **customizable** to the needs of your organization. PAM is designed to meet these requirements. It offers:
+* A simple yet effective **data model**, defining what data is stored in the system and how it is interlinked​
+* A set of **layouts** to easily manage this data​
+* Standard **user roles** to control access, down to individual records and fields​
+* **Workflows** that automate operational processes​
+* **Integrations** with other tools, such as Kobo, PowerBI, or Twilio
 
 #### Why EspoCRM?
 [EspoCRM](https://www.espocrm.com/) is an open-source data management system. It is highly customizable, directly from the user interface. It is free to use, lightweight, and has a large, supportive user community. For more information, visit the [EspoCRM Documentation](https://docs.espocrm.com/) and [510's EspoCRM knowledge base](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki).
