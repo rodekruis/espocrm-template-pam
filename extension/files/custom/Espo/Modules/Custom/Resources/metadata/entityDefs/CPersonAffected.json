@@ -117,6 +117,7 @@
         "age": {
             "type": "int",
             "audited": true,
+            "isCustom": true,
             "readOnly": true
         },
         "dateofbirth": {
@@ -125,6 +126,7 @@
             "required": true,
             "useNumericFormat": true,
             "audited": true,
+            "isCustom": true,
             "isPersonalData": true
         },
         "disabilityType": {
@@ -148,6 +150,7 @@
             "displayAsList": true,
             "pattern": null,
             "audited": true,
+            "isCustom": true,
             "isPersonalData": false
         },
         "gender": {
@@ -168,7 +171,8 @@
                 "female": null,
                 "other": null
             },
-            "maxLength": 100
+            "maxLength": 100,
+            "isCustom": true
         },
         "idNumber": {
             "type": "varchar",
@@ -176,7 +180,8 @@
             "maxLength": 100,
             "audited": true,
             "isPersonalData": true,
-            "options": []
+            "options": [],
+            "isCustom": true
         },
         "idType": {
             "type": "enum",
@@ -198,7 +203,8 @@
                 "idDocumentNA": null
             },
             "isPersonalData": true,
-            "maxLength": 100
+            "maxLength": 100,
+            "isCustom": true
         },
         "internalID": {
             "type": "number",
@@ -208,17 +214,20 @@
             "nextNumber": 16,
             "padLength": 6,
             "prefix": "PA",
+            "isCustom": true,
             "audited": true
         },
         "isThisMemberAHeadOfHousehold": {
             "notNull": true,
             "type": "bool",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "isThisMemberAPregnantWoman": {
             "notNull": true,
             "type": "bool",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "languagesSpoken": {
             "type": "multiEnum",
@@ -243,7 +252,8 @@
                 "zh": null,
                 "ru": null,
                 "es": null
-            }
+            },
+            "isCustom": true
         },
         "nationality": {
             "type": "multiEnum",
@@ -256,6 +266,7 @@
             "style": {
                 "netherlands": null
             },
+            "isCustom": true,
             "options": [
                 "netherlands"
             ]
@@ -265,7 +276,8 @@
             "maxLength": 100,
             "options": [],
             "audited": true,
-            "isPersonalData": true
+            "isPersonalData": true,
+            "isCustom": true
         },
         "preferredLanguage": {
             "type": "enum",
@@ -290,7 +302,8 @@
                 "": null
             },
             "tooltip": true,
-            "maxLength": 100
+            "maxLength": 100,
+            "isCustom": true
         },
         "recordNumber": {
             "type": "number",
@@ -300,7 +313,8 @@
             "prefix": "SeqID",
             "nextNumber": 40,
             "padLength": 8,
-            "copyToClipboard": true
+            "copyToClipboard": true,
+            "isCustom": true
         },
         "vulnerabilityType": {
             "type": "multiEnum",
@@ -335,6 +349,7 @@
                 "otherCriteria": null
             },
             "isPersonalData": true,
+            "isCustom": true,
             "audited": true
         },
         "cHousehold": {
@@ -353,6 +368,7 @@
                 ""
             ],
             "maxLength": 100,
+            "isCustom": true,
             "style": {
                 "bacsKiskun": null,
                 "": null
@@ -368,6 +384,7 @@
             "importDisabled": false,
             "exportDisabled": false,
             "customizationDisabled": false,
+            "isCustom": true,
             "audited": true
         }
     },
@@ -413,12 +430,14 @@
             "type": "belongsTo",
             "foreign": "cPersonAffected",
             "entity": "CHousehold",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "cHouseholdHO": {
             "type": "hasOne",
             "foreign": "cHeadOfHouseHold",
             "entity": "CHousehold",
+            "isCustom": true,
             "audited": true
         },
         "cPrograms": {
@@ -426,7 +445,8 @@
             "relationName": "cCProgramCPersonAffected",
             "foreign": "cPersonAffecteds",
             "entity": "CProgram",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         }
     },
     "collection": {

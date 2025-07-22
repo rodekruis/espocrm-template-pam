@@ -1,0 +1,19 @@
+[
+    "address",
+    "age",
+    "dateofbirth",
+    "emailAddress",
+    "cHousehold",
+    "disabilityType",
+    "gender",
+    "idType",
+    "name",
+    "nationality",
+    "phoneNumber",
+    "preferredLanguage",
+    "cPrograms",
+    "isThisMemberAPregnantWoman",
+    "vulnerabilityType",
+    "idNumber",
+    "internalID"
+]

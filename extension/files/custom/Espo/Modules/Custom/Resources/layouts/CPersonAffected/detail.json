@@ -1,0 +1,135 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "internalID"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "firstName"
+                },
+                {
+                    "name": "middleName"
+                },
+                {
+                    "name": "lastName"
+                }
+            ],
+            [
+                {
+                    "name": "gender"
+                },
+                {
+                    "name": "nationality"
+                }
+            ],
+            [
+                {
+                    "name": "dateofbirth"
+                },
+                {
+                    "name": "age"
+                }
+            ],
+            [
+                {
+                    "name": "languagesSpoken"
+                },
+                {
+                    "name": "preferredLanguage"
+                }
+            ],
+            [
+                {
+                    "name": "cHousehold"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "customLabel": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "idType"
+                },
+                {
+                    "name": "idNumber"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "noteText": null,
+        "noteStyle": "info",
+        "customLabel": "ID"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "noteText": null,
+        "noteStyle": "info",
+        "customLabel": "Address and Contacts"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "disabilityType"
+                },
+                {
+                    "name": "vulnerabilityType"
+                }
+            ],
+            [
+                {
+                    "name": "isThisMemberAPregnantWoman"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "noteText": null,
+        "noteStyle": "info",
+        "customLabel": "Vulnerabilities"
+    }
+]

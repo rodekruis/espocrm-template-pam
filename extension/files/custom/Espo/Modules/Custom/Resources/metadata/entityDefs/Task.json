@@ -19,7 +19,8 @@
             "unique": false,
             "nextNumber": 1,
             "padLength": 5,
-            "prefix": "TA"
+            "prefix": "TA",
+            "isCustom": true
         },
         "status": {
             "options": [

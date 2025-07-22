@@ -19,8 +19,8 @@
     "type": "BasePlus",
     "module": "Custom",
     "object": true,
+    "isCustom": true,
     "statusField": null,
     "kanbanStatusIgnoreList": null,
-    "duplicateCheckFieldList": [],
-    "isCustomExported": true
+    "duplicateCheckFieldList": []
 }

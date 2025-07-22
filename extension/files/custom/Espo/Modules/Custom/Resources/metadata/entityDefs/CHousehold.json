@@ -46,11 +46,13 @@
             "audited": true,
             "min": 1,
             "max": 100,
+            "isCustom": true,
             "readOnly": false
         },
         "calculatedMale": {
             "type": "int",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "cPersonAffected": {
             "type": "linkMultiple",
@@ -61,23 +63,28 @@
             "importDisabled": false,
             "exportDisabled": false,
             "customizationDisabled": false,
+            "isCustom": true,
             "audited": true
         },
         "calculatedFemale": {
             "type": "int",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "calculatedPregnant": {
             "type": "int",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "calculatedChildren": {
             "type": "int",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "cHeadOfHouseHold": {
             "type": "link",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "internalID": {
             "type": "number",
@@ -87,12 +94,14 @@
             "nextNumber": 46,
             "padLength": 6,
             "prefix": "HH",
+            "isCustom": true,
             "audited": true
         },
         "calculateMembers": {
             "notNull": true,
             "type": "bool",
-            "tooltip": true
+            "tooltip": true,
+            "isCustom": true
         }
     },
     "links": {
@@ -118,12 +127,14 @@
             "type": "hasMany",
             "foreign": "cHousehold",
             "entity": "CPersonAffected",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "cHeadOfHouseHold": {
             "type": "belongsTo",
             "foreign": "cHouseholdHO",
-            "entity": "CPersonAffected"
+            "entity": "CPersonAffected",
+            "isCustom": true
         }
     },
     "collection": {

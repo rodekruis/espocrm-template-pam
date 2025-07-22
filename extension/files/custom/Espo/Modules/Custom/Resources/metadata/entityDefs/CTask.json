@@ -46,6 +46,7 @@
             "prefix": "TA",
             "nextNumber": 1,
             "padLength": 5,
+            "isCustom": true,
             "audited": true
         },
         "taskName": {
@@ -53,14 +54,16 @@
             "required": true,
             "rowsMin": 2,
             "cutHeight": 200,
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "dueDate": {
             "notNull": false,
             "type": "date",
             "required": true,
             "after": "createdAt",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "taskStatus": {
             "type": "enum",
@@ -79,6 +82,7 @@
                 "Deferred": "danger"
             },
             "maxLength": 100,
+            "isCustom": true,
             "default": "toDO"
         },
         "cProgram": {
@@ -135,7 +139,8 @@
             "type": "belongsTo",
             "foreign": "cTasks",
             "entity": "CProgram",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         }
     },
     "collection": {

@@ -55,6 +55,7 @@
             "maxLength": 100,
             "options": [],
             "audited": true,
+            "isCustom": true,
             "pattern": "$noBadCharacters"
         },
         "programName": {
@@ -63,32 +64,37 @@
             "maxLength": 100,
             "options": [],
             "pattern": "$noBadCharacters",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "startDate": {
             "notNull": false,
             "type": "date",
             "required": true,
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "endDate": {
             "notNull": false,
             "type": "date",
             "required": true,
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "donor": {
             "type": "text",
             "required": true,
             "rowsMin": 2,
             "cutHeight": 200,
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "inclusionCriteria": {
             "type": "text",
             "required": true,
             "rowsMin": 2,
             "cutHeight": 200,
+            "isCustom": true,
             "audited": true
         },
         "programStatus": {
@@ -109,7 +115,8 @@
             "default": "planned",
             "isSorted": true,
             "audited": true,
-            "maxLength": 100
+            "maxLength": 100,
+            "isCustom": true
         },
         "cTasks": {
             "type": "linkMultiple",
@@ -120,6 +127,7 @@
             "importDisabled": false,
             "exportDisabled": false,
             "customizationDisabled": false,
+            "isCustom": true,
             "audited": true
         },
         "cPersonAffecteds": {
@@ -131,6 +139,7 @@
             "importDisabled": false,
             "exportDisabled": false,
             "customizationDisabled": false,
+            "isCustom": true,
             "audited": true
         }
     },
@@ -183,14 +192,16 @@
             "type": "hasMany",
             "foreign": "cProgram",
             "entity": "CTask",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         },
         "cPersonAffecteds": {
             "type": "hasMany",
             "relationName": "cCProgramCPersonAffected",
             "foreign": "cPrograms",
             "entity": "CPersonAffected",
-            "audited": true
+            "audited": true,
+            "isCustom": true
         }
     },
     "collection": {

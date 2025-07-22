@@ -1,0 +1,60 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "internalID"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "firstName"
+                },
+                {
+                    "name": "middleName"
+                },
+                {
+                    "name": "lastName"
+                }
+            ],
+            [
+                {
+                    "name": "gender"
+                },
+                {
+                    "name": "nationality"
+                }
+            ],
+            [
+                {
+                    "name": "dateofbirth"
+                },
+                {
+                    "name": "age"
+                }
+            ],
+            [
+                {
+                    "name": "languagesSpoken"
+                },
+                {
+                    "name": "preferredLanguage"
+                }
+            ],
+            [
+                {
+                    "name": "cHousehold"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "customLabel": "Overview"
+    }
+]

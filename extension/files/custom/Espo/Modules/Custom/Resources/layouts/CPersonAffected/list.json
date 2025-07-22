@@ -1,0 +1,23 @@
+[
+    {
+        "name": "internalID",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "name",
+        "align": "left"
+    },
+    {
+        "name": "gender"
+    },
+    {
+        "name": "age"
+    },
+    {
+        "name": "phoneNumber"
+    },
+    {
+        "name": "cHousehold"
+    }
+]
