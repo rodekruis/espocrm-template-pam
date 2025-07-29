@@ -44,7 +44,7 @@ PAM consists of _Entities_ and _Roles_.
 
 1. If not done already, [install EspoCRM](https://docs.espocrm.com/administration/installation/).
 2. Download the .zip file with the extension: [extension.zip](https://github.com/rodekruis/espocrm-template-pam/raw/refs/heads/main/extension.zip).
-2. Install the extension
+3. Install the extension
     * Log in EspoCRM as an administrator.
     * Go to `Administration` > `Extensions`.
     * Select the .zip file with the extension.
@@ -53,10 +53,10 @@ PAM consists of _Entities_ and _Roles_.
 > [!WARNING]  
 > If you already have entities with the same names, the installation will overwrite them.
  
-3. Make the entities visible in the `Navbar`:
+4. Make the entities visible in the `Navbar`:
     * Go to `Administration` > `User Interface`.
     * Under `Navbar` > `Tab List`, add the entities `Persons Affected`, `Households`, `Programs`, and `Tasks`.
-4. For every file in the [import](/import) folder, import it in EspoCRM:
+5. For every file in the [import](/import) folder, import it in EspoCRM:
     * Go to `Administration` > `Import`.
     * Under `What to Import?` > `Entity Type`, select the entity corresponding to the file name; e.g. if the file name is `Roles.csv`, select `Roles`.
     * Click `Next`.
